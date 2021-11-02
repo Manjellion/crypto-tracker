@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useState }from 'react';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
 import { useGetCryptosQuery } from '../services/cryptoApi';
-import { Typography, Row, Col, Statistic } from 'antd';
+import { Typography, Row, Col, Statistic, Card } from 'antd';
 
 const { Title } = Typography;
 
 const currency = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const { data, isFetching } = useGetCryptosQuery();
+    const { data, isFetching } = useGetCryptosQuery(10);  // By placing 10 into the hook query we make the count 10, resulting in the query to request the limit at 10 
     const globalStats = data?.data?.stats;
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const {data: cryptoList, isFecthing } = useGetCryptosQuery();
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [cryptos, setCryptos] = useState(cryptoList?.data?.coins);
 
     if(isFetching) return 'Loading...';
     console.log(globalStats)
@@ -25,9 +29,6 @@ const currency = () => {
                     <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
                     <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
                 </Row>
-                <div className="home-heading-container">
-                    <Title level={2} className="home-title">Top 10 Cryptos In The World</Title>
-                </div>
         </div>
     )
 }

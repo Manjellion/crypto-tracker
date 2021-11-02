@@ -11,7 +11,7 @@ const Navbar = () => {
                     <div className="logo-container">
                         <Avatar src={icon} size="medium"></Avatar>
                         <Typography.Title level={2} className="logo">
-                            <Link to="/">Crypto Tracker</Link>
+                            <Link to="/Home">Crypto Tracker</Link>
                         </Typography.Title>
                     </div>
                 <ul>
@@ -20,6 +20,9 @@ const Navbar = () => {
                     </li>
                     <li>
                     <Link to="/currencies">CURRENCIES</Link>
+                    </li>
+                    <li>
+                    <Link to="/cryptocurrencies">CRYPTOCURRENCIES</Link>
                     </li>
                     <li>
                     <Link to="/account">ACCOUNT</Link>
