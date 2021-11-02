@@ -1,10 +1,12 @@
 import React, { useEffect, useState} from 'react';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
-import { Card, Row, Col, Input } from 'antd';
+import { Card, Row, Col, Typography } from 'antd';
 
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import currency from './currencies';
+
+const { Title } = Typography;
 
 // simplfied is a attribute from Body.jsx 
 const CryptoCurrencies = ({ simplified }) => {
@@ -19,6 +21,7 @@ const CryptoCurrencies = ({ simplified }) => {
         // React Fragment
         <>
             <div className="Currency">
+            <Title level={2}>Cryptocurrencies</Title>
                 <Row gutter={[32, 32]} className="crypto-card-container">
                     {cryptos?.map((currency) => (
                         <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id}>

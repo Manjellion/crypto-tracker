@@ -36,6 +36,7 @@ const App = () => {
                 All rights reserverd <br />
                 <Link to="/Home">Home</Link>
                 <Link to="/currencies">Currencies</Link>
+                <Link to="/cryptocurrencies">Cryptocurrencies</Link>
                 <Link to="/Account">Account</Link>
                 <Link to="/News">News</Link>
             </div>

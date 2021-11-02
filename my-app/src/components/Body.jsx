@@ -14,14 +14,14 @@ const body = () => {
                 <h2>Track Your Crypto Currencies</h2> 
                 <p>Accurately tracking cryptocurrency investment performance and taxes is hard. We make it easy and help you save money.</p>
                 <button><Link to="/Account">Get Started Today</Link></button>
-                <p>✅ Join users who trust Doge Tracker</p>
+                <p>✅ Join users who trust Crypto Tracker</p>
             </div>
             <div className="home-heading-container">
                 <Title level={2} className="home-title" style={{margin: 40}}>
                     Top 10 Cryptos In The World
                 </Title>
                     <Cryptocurrencies simplified />
-                <Title level={3} className="show-more">
+                <Title level={3} className="show-more-button">
                     <Link to="/cryptocurrencies">Show More</Link>
                 </Title>
             </div>
@@ -30,7 +30,7 @@ const body = () => {
                     Latest News on Crypto
                 </Title>
                     <News simplified/>
-                <Title level={3}>
+                <Title className="show-more-button" level={3}>
                     <Link to="/news">Show More</Link>
                 </Title>
             </div>

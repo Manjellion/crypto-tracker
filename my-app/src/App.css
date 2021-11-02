@@ -14,7 +14,7 @@
 }
 
 .App nav {
-    padding: 1em;
+    padding: 1rem;
     background-color: navy;
 }
 
@@ -31,12 +31,8 @@
 
 .App nav .nav-container .logo-container a {
     text-decoration: none;
+    font-size: 1.5rem;
     color: white;
-}
-
-.App nav h1 {
-    margin-left: .5rem;
-    font-size: 1rem;
 }
 
 .App nav ul {
@@ -46,6 +42,7 @@
 }
 
 .App nav ul li {
+    justify-content: space-between;
     margin-right: .5rem;
 }
 
@@ -103,11 +100,30 @@
     height: 40px;
     width: 40px;
 }
+
 .news-container {
-    margin: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
 }
 
 .news-container img {
    border-radius: 5rem;
+}
+
+.home-heading-container .show-more-button {
+    padding: 1rem 6rem 1rem 6rem;
+    background-color: navy;
+    border-style: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.home-heading-container .show-more-button a {
+    color: white;
 }
 
