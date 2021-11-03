@@ -17,8 +17,7 @@ const currency = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [cryptos, setCryptos] = useState(cryptoList?.data?.coins);
 
-    if(isFetching) return 'Loading...';
-    console.log(globalStats)
+
     return (
         <div className="Currency">
             <Title level={2} className="heading">Global Crypto Stats</Title>
