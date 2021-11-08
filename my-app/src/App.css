@@ -52,6 +52,27 @@
     font-size: .8rem;
 }
 
+.App nav .hamburger-icon img {
+    position: absolute;
+    top: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.App nav .hamburger-icon img:focus {
+    outline: none;
+}
+
+
 .App .body-container {
     margin-top: 1rem;
     background-color: #f8f9fa;

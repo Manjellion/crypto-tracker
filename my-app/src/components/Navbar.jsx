@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Avatar, Typography } from 'antd';
-import icon from'../images/cryptocurrency.png';
+import icon from'../images/menu.png';
+import { DownSquareOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
     return (
@@ -9,12 +10,12 @@ const Navbar = () => {
             <nav>
                 <div class="nav-container">
                     <div className="logo-container">
-                        <Avatar src={icon} size="medium"></Avatar>
+                    <DownSquareOutlined style={{fontSize: 40, color:'white'}}/>
                         <Typography.Title level={2} className="logo">
                             <Link to="/Home">Crypto Tracker</Link>
                         </Typography.Title>
                     </div>
-                <ul>
+                {/* <ul>
                     <li>
                     <Link to="/Home">HOME</Link>
                     </li>
@@ -30,7 +31,10 @@ const Navbar = () => {
                     <li>
                     <Link to="/news">NEWS</Link>
                     </li>
-                </ul>
+                </ul> */}
+                <div class="hamburger-icon">
+                    <img src={icon} alt="hamburger-menu"/>
+                </div>
                 </div>
             </nav>
         </div>
