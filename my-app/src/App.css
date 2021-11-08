@@ -52,26 +52,48 @@
     font-size: .8rem;
 }
 
-.App nav .hamburger-icon img {
-    position: absolute;
-    top: 5%;
-    align-items: center;
+.App .Mobile-nav {
+    display: none;
+}
+
+.App .Navigation {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
 }
 
-.App nav .hamburger-icon img:focus {
-    outline: none;
-}
+@media (max-width: 990px) {
+    .App .Navigation {
+        display: none;
+    }
 
+    .App .Mobile-nav {
+        display: flex;
+        z-index: 1;
+        align-items: center;
+    }
+
+    .App .Mobile-nav .Hamburger {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+
+
+    .App nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        background-color: darkblue;
+    }
+
+    .App nav ul li {
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+}
 
 .App .body-container {
     margin-top: 1rem;
@@ -148,3 +170,10 @@
     color: white;
 }
 
+.Account-form {
+    padding: 2rem;
+}
+
+.Account-form button {
+    margin-left: 2rem;
+}
