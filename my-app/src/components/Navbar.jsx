@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Avatar, Typography } from 'antd';
+import { Avatar, Button, Typography } from 'antd';
 import icon from'../images/cryptocurrency.png';
 
 const Navbar = () => {
