@@ -32,7 +32,7 @@ const App = () => {
                 </div>
             </div>
             <div className="footer">
-                Doge Tracker <br />
+                Crypto Tracker <br />
                 All rights reserverd <br />
                 <Link to="/Home">Home</Link>
                 <Link to="/currencies">Currencies</Link>

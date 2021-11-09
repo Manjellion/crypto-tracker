@@ -1,7 +1,15 @@
 import React from 'react';
+import Navigations from './Navigations';
+import MobileNav from './MobileNav';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import { Avatar, Button, Typography } from 'antd';
 import icon from'../images/cryptocurrency.png';
+=======
+import { Avatar, Typography } from 'antd';
+import icon from'../images/menu.png';
+import { DownSquareOutlined } from '@ant-design/icons';
+>>>>>>> 456df153fa1f6a25da3eee055f6811c7d2777011
 
 const Navbar = () => {
     return (
@@ -9,28 +17,13 @@ const Navbar = () => {
             <nav>
                 <div class="nav-container">
                     <div className="logo-container">
-                        <Avatar src={icon} size="medium"></Avatar>
+                    <DownSquareOutlined style={{fontSize: 40, color:'white'}}/>
                         <Typography.Title level={2} className="logo">
                             <Link to="/Home">Crypto Tracker</Link>
                         </Typography.Title>
-                    </div>
-                <ul>
-                    <li>
-                    <Link to="/Home">HOME</Link>
-                    </li>
-                    <li>
-                    <Link to="/currencies">CURRENCIES</Link>
-                    </li>
-                    <li>
-                    <Link to="/cryptocurrencies">CRYPTOCURRENCIES</Link>
-                    </li>
-                    <li>
-                    <Link to="/account">ACCOUNT</Link>
-                    </li>
-                    <li>
-                    <Link to="/news">NEWS</Link>
-                    </li>
-                </ul>
+                    </div> 
+                    <Navigations />
+                    <MobileNav />
                 </div>
             </nav>
         </div>

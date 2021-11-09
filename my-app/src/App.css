@@ -52,6 +52,49 @@
     font-size: .8rem;
 }
 
+.App .Mobile-nav {
+    display: none;
+}
+
+.App .Navigation {
+    display: flex;
+}
+
+@media (max-width: 990px) {
+    .App .Navigation {
+        display: none;
+    }
+
+    .App .Mobile-nav {
+        display: flex;
+        z-index: 1;
+        align-items: center;
+    }
+
+    .App .Mobile-nav .Hamburger {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+
+
+    .App nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        background-color: darkblue;
+    }
+
+    .App nav ul li {
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+}
+
 .App .body-container {
     margin-top: 1rem;
     background-color: #f8f9fa;
@@ -127,3 +170,10 @@
     color: white;
 }
 
+.Account-form {
+    padding: 2rem;
+}
+
+.Account-form button {
+    margin-left: 2rem;
+}

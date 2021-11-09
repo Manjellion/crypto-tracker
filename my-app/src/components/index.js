@@ -3,4 +3,5 @@ export { default as Body } from './Body';
 export { default as Currencies } from './currencies';
 export { default as Cryptocurrencies} from './CryptoCurrencies';
 export { default as Account } from './Account';
+export { default as SignIn } from './SignInAccount';
 export { default as News } from './News';
